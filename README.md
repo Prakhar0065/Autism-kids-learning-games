@@ -67,6 +67,11 @@ cd frontend
 npm install
 npm run dev
 
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+
 ## 🧪 Usage
 
 - Navigate to `http://localhost:5173` for the frontend.
