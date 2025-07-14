@@ -1,62 +1,155 @@
 Autism Detection & Learning Platform through Interactive Games
-A full-stack web platform built using React and Python that aids early autism detection in children through scientifically designed games. The platform also offers therapeutic learning through interactive tasks involving color recognition, gesture recognition, and emotion recognition.
 
-🛠 Tech Stack
-Frontend: React, TypeScript, Vite
 
-Backend: Python 3.9, FastAPI, OpenCV, MediaPipe, TensorFlow, scikit-learn
+This is a full-stack web platform that assists in the early detection of Autism Spectrum Disorder (ASD) in children through interactive games. The platform also helps autistic children learn and engage via therapeutic game-based activities.
 
-Database: MongoDB, Firebase
+Built using:
 
-Communication: REST API, WebSockets
+⚛️ React (Frontend)
 
-Deployment: (Add your deployment platform, e.g., Heroku, Render, or local)
+🐍 Python (Backend)
 
-🎮 Features
-User Authentication: Login/signup system for users.
+📡 FastAPI, WebSockets
 
-Game Selection:
+🧠 TensorFlow, OpenCV, MediaPipe
 
-Color Recognition Game
+💾 MongoDB, Firebase
 
-Gesture Recognition Game
+🧩 Table of Contents
+Introduction
 
-Emotion Recognition Game
+System Architecture
 
-Autism Assessment Test
+Key Features
 
-Real-Time Analysis:
+Technical Stack
 
-Live video processing using OpenCV + MediaPipe
+Technical Modules
 
-Adaptive difficulty based on user performance
+Installation
 
-Machine Learning:
+Results & Impact
 
-Pre-trained models for gesture and emotion detection
+License
 
-Real-time behavioral data analysis
+📘 Introduction
+This platform offers a game-based approach to autism detection, enabling early behavioral analysis through:
 
-Data Storage & Security:
+Color recognition tasks
 
-MongoDB/Firebase integration
+Gesture imitation tasks
 
-Compliant with healthcare data protection practices
+Emotion recognition from facial expressions
 
-🧩 System Architecture
-Client-server architecture with:
+A comprehensive autism assessment test
 
-A React frontend for smooth UI and engaging gameplay.
+It offers real-time video processing and adaptive difficulty to keep children engaged and gather insightful data.
 
-A Python FastAPI backend for game logic, ML model inference, and data analytics.
+🏗️ System Architecture
+Our platform follows a client-server model:
 
-Architecture Flow:
-User logs in/signs up.
+Users sign up or log in.
 
-Game selection screen appears.
+They land on a game selection menu.
 
-Games are played with camera input and real-time feedback.
+After selecting a game, video input is processed in real-time.
 
-Results are calculated and shown.
+Results are analyzed and displayed.
 
-User can repeat or switch games
+Users can choose to play other games.
+
+🎮 Games Included
+🎨 Color Recognition Game
+
+✋ Gesture Recognition Game
+
+😊 Emotion Recognition Game
+
+🧠 Autism Assessment Test
+
+✨ Key Features
+✅ Real-time facial & gesture analysis
+
+📊 Adaptive difficulty adjustment
+
+⚡ Fast WebSocket communication (~83ms latency)
+
+🔐 Secure user data storage
+
+📁 Modular backend architecture
+
+🧰 Technical Stack
+Layer	Technology Used
+Frontend	React, TypeScript, Vite
+Backend	Python 3.9, FastAPI, WebSocket
+Computer Vision	OpenCV, MediaPipe
+Machine Learning	TensorFlow, scikit-learn
+Database	MongoDB, Firebase
+
+🔧 Technical Modules
+🎥 Computer Vision Module
+Built with OpenCV 4.5.3 & MediaPipe
+
+Performs hand tracking, pose estimation, and facial analysis
+
+🧠 Machine Learning Module
+TensorFlow-based emotion and gesture classifiers
+
+Trained on datasets with over 10,000 hand poses
+
+🧩 Game Logic Module
+Written in native Python
+
+Adjusts task difficulty in real-time
+
+🔌 API Services
+Built with FastAPI 0.73
+
+Uses WebSocket for ultra-fast video communication
+
+🗃️ Data Management
+MongoDB and Firebase handle:
+
+User authentication
+
+Session tracking
+
+Game scores and metrics
+
+💻 Installation
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/autism-detection-platform.git
+cd autism-detection-platform
+2. Setup Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+3. Setup Backend
+bash
+Copy
+Edit
+cd ../backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+Make sure to configure your .env files for both frontend and backend, especially for MongoDB and Firebase credentials.
+
+📈 Results & Impact
+⏱️ WebSocket latency: ~83ms
+
+🤖 Trained on: 10,000+ gesture images
+
+🧪 Emotion detection: High precision CNN-based classifiers
+
+🧠 Helps professionals with early autism screening
+
+🧒 Friendly UI design for children with diverse developmental needs
+
+
+
+
